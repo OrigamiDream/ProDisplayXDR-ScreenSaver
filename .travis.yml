@@ -1,0 +1,25 @@
+language: swift
+
+osx_image: xcode10.2
+
+script:
+  - xcodebuild -scheme ProDisplayXDR -sdk macosx -destination 'platform=macOS' build -derivedDataPath build
+
+before_deploy:
+  - cd build/Build/Products/Debug
+  - tar -zcf ProDisplayXDR.tar.gz ProDisplayXDR.saver
+  - mv ProDisplayXDR.tar.gz ../../../../ProDisplayXDR.tar.gz
+  - cd ../../../../
+  - ls
+
+deploy:
+  provider: releases
+  api_key:
+    secure: rJKKrSYsannTZlh0cFP+YIe7pf4EyjlflxYgykHWq3UCWVijDh1CIbAD++B8z9rgtWqN/FETMf27/WLEAkeZZsh9AJLEdhF6Isor7Nlxqw9e9zKxTM5OhQS6UZA9vEFVlEp3tkNi2u6O7uJTRtBt7FHYJ9hJ4BVZchvs36k4mTkfzBTh8LUszSgtgPK+H3l1pqMcaJ+Zsi0SAYOUt+FskHy+UYbhiCKY36L0Kf5sUNo5CSpaOo9TPFQev83Cv7D/CcpdOpQREeazsG8HYUHW5rKCdisNyqMe4H88zObju+es4agOyOnGHNml4yBQLTwTFx6mFil+ynrVMezksplX8JXNuK7KYEo0I1kWQoG/l6iYuP0g/aFeR5NsBkVKpq+PbVwAGPb3kujAVkNL13l8seyqggreWNPRzQPzfvK/8ff2yuqviGlUyWAIrEHtu5LCdByENw3VOXGwrjSC9pOM0D4WB/2NDB5DPDjn18Ux8BERjDjEpt0tmzRSjBYljRtKZahjSg4esBAAr2inn56fee3iKMJ9vYCUEofu8mfEeuVgzo0nb9kDlzjxkrHT39ZTb7Iqt4ln71qoGUsQ7laIRh17RYQcXPmguIve3WHKWID6nxcNfpGWBLm3517OqjTt/fA4aEhlmbDZRo6rr6uTE0HF2s8Ez+SFtAVC5LbH5BU=
+  file_glob: true
+  file: ProDisplayXDR.tar.gz
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+    repo: OrigamiDream/ProDisplayXDR-ScreenSaver
