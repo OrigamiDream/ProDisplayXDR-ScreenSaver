@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A70067022C76354003E7B1E /* ProDisplayXDRView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A70066F22C76354003E7B1E /* ProDisplayXDRView.h */; };
-		9A70067222C76354003E7B1E /* ProDisplayXDRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A70067122C76354003E7B1E /* ProDisplayXDRView.m */; };
+		20CB5472DEBBD4F0E6D217A3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 20CB57C982216760F201914D /* README.md */; };
+		20CB58ED9BFAF077F15A104F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 20CB51262F00C163D2FE1E54 /* .travis.yml */; };
+		20CB5969960F41F304786027 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 20CB519EF3337540B685A3E5 /* .gitignore */; };
+		9A70067B22C76387003E7B1E /* ProDisplayXDRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A70067922C76387003E7B1E /* ProDisplayXDRView.swift */; };
+		9A70067C22C76387003E7B1E /* ProDisplayXDR.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A70067A22C76387003E7B1E /* ProDisplayXDR.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20CB51262F00C163D2FE1E54 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
+		20CB519EF3337540B685A3E5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		20CB57C982216760F201914D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9A70066C22C76354003E7B1E /* ProDisplayXDR.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProDisplayXDR.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A70066F22C76354003E7B1E /* ProDisplayXDRView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProDisplayXDRView.h; sourceTree = "<group>"; };
-		9A70067122C76354003E7B1E /* ProDisplayXDRView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProDisplayXDRView.m; sourceTree = "<group>"; };
 		9A70067322C76354003E7B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A70067922C76387003E7B1E /* ProDisplayXDRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProDisplayXDRView.swift; sourceTree = "<group>"; };
+		9A70067A22C76387003E7B1E /* ProDisplayXDR.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProDisplayXDR.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +40,9 @@
 			children = (
 				9A70066E22C76354003E7B1E /* ProDisplayXDR */,
 				9A70066D22C76354003E7B1E /* Products */,
+				20CB519EF3337540B685A3E5 /* .gitignore */,
+				20CB51262F00C163D2FE1E54 /* .travis.yml */,
+				20CB57C982216760F201914D /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +57,8 @@
 		9A70066E22C76354003E7B1E /* ProDisplayXDR */ = {
 			isa = PBXGroup;
 			children = (
-				9A70066F22C76354003E7B1E /* ProDisplayXDRView.h */,
-				9A70067122C76354003E7B1E /* ProDisplayXDRView.m */,
+				9A70067A22C76387003E7B1E /* ProDisplayXDR.mp4 */,
+				9A70067922C76387003E7B1E /* ProDisplayXDRView.swift */,
 				9A70067322C76354003E7B1E /* Info.plist */,
 			);
 			path = ProDisplayXDR;
@@ -62,7 +71,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A70067022C76354003E7B1E /* ProDisplayXDRView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +106,7 @@
 				TargetAttributes = {
 					9A70066B22C76354003E7B1E = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -123,6 +132,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A70067C22C76387003E7B1E /* ProDisplayXDR.mp4 in Resources */,
+				20CB5969960F41F304786027 /* .gitignore in Resources */,
+				20CB58ED9BFAF077F15A104F /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A70067222C76354003E7B1E /* ProDisplayXDRView.m in Sources */,
+				9A70067B22C76387003E7B1E /* ProDisplayXDRView.swift in Sources */,
+				20CB5472DEBBD4F0E6D217A3 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +267,21 @@
 		9A70067722C76354003E7B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = D7VX39F64W;
 				INFOPLIST_FILE = ProDisplayXDR/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Avis-Studio.ProDisplayXDR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -268,13 +289,20 @@
 		9A70067822C76354003E7B1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = D7VX39F64W;
 				INFOPLIST_FILE = ProDisplayXDR/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Avis-Studio.ProDisplayXDR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
