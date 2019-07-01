@@ -11,7 +11,7 @@
 		20CB58ED9BFAF077F15A104F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 20CB51262F00C163D2FE1E54 /* .travis.yml */; };
 		20CB5969960F41F304786027 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 20CB519EF3337540B685A3E5 /* .gitignore */; };
 		9A70067B22C76387003E7B1E /* ProDisplayXDRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A70067922C76387003E7B1E /* ProDisplayXDRView.swift */; };
-		9A70067C22C76387003E7B1E /* ProDisplayXDR.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A70067A22C76387003E7B1E /* ProDisplayXDR.mp4 */; };
+		9AC2209622C99DD9008D51E3 /* ProDisplayXDR.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9AC2209522C99DD9008D51E3 /* ProDisplayXDR.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		9A70066C22C76354003E7B1E /* ProDisplayXDR.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProDisplayXDR.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A70067322C76354003E7B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A70067922C76387003E7B1E /* ProDisplayXDRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProDisplayXDRView.swift; sourceTree = "<group>"; };
-		9A70067A22C76387003E7B1E /* ProDisplayXDR.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProDisplayXDR.mp4; sourceTree = "<group>"; };
+		9AC2209522C99DD9008D51E3 /* ProDisplayXDR.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProDisplayXDR.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		9A70066E22C76354003E7B1E /* ProDisplayXDR */ = {
 			isa = PBXGroup;
 			children = (
-				9A70067A22C76387003E7B1E /* ProDisplayXDR.mp4 */,
+				9AC2209522C99DD9008D51E3 /* ProDisplayXDR.mp4 */,
 				9A70067922C76387003E7B1E /* ProDisplayXDRView.swift */,
 				9A70067322C76354003E7B1E /* Info.plist */,
 			);
@@ -133,7 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A70067C22C76387003E7B1E /* ProDisplayXDR.mp4 in Resources */,
+				9AC2209622C99DD9008D51E3 /* ProDisplayXDR.mp4 in Resources */,
 				20CB5969960F41F304786027 /* .gitignore in Resources */,
 				20CB58ED9BFAF077F15A104F /* .travis.yml in Resources */,
 			);
